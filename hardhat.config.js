@@ -1,12 +1,11 @@
-require("@nomicfoundation/hardhat-toolbox");
+import "@nomicfoundation/hardhat-toolbox";
 
-module.exports = {
+export default {
   solidity: "0.8.20",
   networks: {
     hardhat: {
-      initialBaseFeePerGas: 0, // EIP-1559 base fee = 0
+      initialBaseFeePerGas: 0,
       chainId: 31337,
-      // Accounts with plenty of ETH; Hardhat prints their private keys on `npx hardhat node`
     },
     localhost: { url: "http://127.0.0.1:8545", chainId: 31337 }
   }
