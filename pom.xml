@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<start-class>com.example.chain.DemoApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -18,14 +18,14 @@ public class Web3Config {
     
     @Bean
     public Credentials credentials() {
-        // Replace with your private key or use environment variable
-        return Credentials.create("0xYOUR_PRIVATE_KEY_HERE");
+        // Use one of Hardhat's test accounts
+        return Credentials.create("0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80");
     }
     
     @Bean
     public PublicTxLog publicTxLog(Web3j web3j, Credentials credentials) {
         return PublicTxLog.load(
-            "0xYOUR_CONTRACT_ADDRESS_HERE", 
+            "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", 
             web3j, 
             credentials, 
             new DefaultGasProvider()
